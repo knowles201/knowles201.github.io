@@ -1,10 +1,147 @@
 ﻿body
 {
     background-color: #59323C;
-    font-family: 'Comic Sans MS'
+    font-family: 'Comic Sans MS';
 }
 .creamColor{color: #F2EEB3}
 .tableColorFormat{background-color: #BFAF80}
 a:link{ color:#F2EEB3}
 a:visited{color:#14bf95}
 a:hover {color:#1446be}
+.logoHeading 
+{
+    position:absolute;
+    top: 55px;
+    left: 25px; 
+}
+.sloganHeading
+{
+    color: #F2EEB3;
+    position:absolute;
+    top: 50px;
+    left: 500px;
+}
+.titleHeading   
+{
+    color: #F2EEB3;
+    position:absolute;
+    top:0px;
+    left: 800px;
+}
+.logoTwoHeading
+{
+    position:absolute;
+    top: 125px;
+    left: 980px;
+}
+.featureList
+{
+    position:absolute;
+    top:215px;
+    left: 480px;
+    color: #F2EEB3;
+}
+.featureHeader
+{
+    position:absolute;
+    top: 170px;
+    left: 500px;
+    color: #F2EEB3;
+    font-size:x-large;
+}
+.orangeDivider
+{
+   background: #F2AE72;    
+}
+.horizontalRule
+{
+    position:absolute;
+    top: 600px;
+}
+.linksHeading
+{
+    position: absolute;
+    top: 300px;
+    left: 25px;
+    color: #F2EEB3;
+    border-bottom: solid 2px;
+}
+.focusStoreLink
+{
+    position:absolute;
+    top: 355px;
+    left: 25px;
+    
+}
+.energyStoreLink
+{
+    position:absolute;
+    top: 458px;
+    left: 25px;
+    
+}
+.contactUsLink
+{
+    position:absolute;
+    top: 560px;
+    left: 25px;
+}
+.satisfactionImage
+{
+    position:absolute;
+    top: 640px;
+    left: 455px;   
+}
+.madeInUSA
+{
+    position:absolute;
+    top: 335px;
+    left: 460px;
+}
+.usaText
+{
+    position:absolute;
+    top:365px;
+    left: 700px;
+    color:#F2EEB3;
+}
+.safetyImage
+{
+    position:absolute;
+    top: 485px;
+    left: 435px;
+}
+.safetyText
+{
+    position:absolute;
+    top: 515px;
+    left: 700px;
+    color:#F2EEB3;
+    padding-right: 5px;
+}
+.satisfactionText
+{
+    position:absolute;
+    top: 670px;
+    left: 700px;
+    color:#F2EEB3;
+}
+.table
+{
+    position:absolute;
+    top: 321px;
+    left: 315px;
+    background-color: #BFAF80;
+}
+.homePage
+{
+    position:absolute;
+    top: 1170px;
+    left: 875px;
+    padding-bottom: 100px;
+}
+.tableCaption
+{
+    color:#F2EEB3;
+    font-size: x-large;
+}
