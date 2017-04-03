@@ -7,6 +7,8 @@
     <style type="text/css">
         @import url(style.css);
     </style>
+    <script src="myjavascript.js"></script>
+
 </head>
 
     <!--Contact Us Heading-->
@@ -49,7 +51,7 @@
 
         <!--Form-->
         <center>
-        <form action="">
+        <form action="/action_page_post.php" name="myForm" onsubmit="return validateForm()" method="post">
             <h1 class="creamColor">Contact Us</h1>
             <p class="creamColor">
                 <br />
@@ -59,11 +61,11 @@
 
                 <label style="font-style:oblique" class="creamColor">
                     First Name:
-                    <Input type="text" name="name" size="12" /><br />
+                    <Input type="text" name="fname" size="12" /><br />
                 </label><br />
                 <label style="font-style:oblique" class="creamColor">
                     Last Name:
-                    <Input type="text" name="name" size="12" /><br />
+                    <Input type="text" name="lname" size="12" /><br />
                 </label><br />
                 <label style="font-style:oblique" class="creamColor">
                     Email:

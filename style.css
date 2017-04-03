@@ -145,3 +145,10 @@ a:hover {color:#1446be}
     color:#F2EEB3;
     font-size: x-large;
 }
+.dateFooter
+{
+    color:#F2EEB3;
+    position:absolute;
+    top: 1150px;
+    left: 314px;
+}
