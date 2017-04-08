@@ -16,3 +16,17 @@ function validateForm() {
         return false;
     }
 }
+
+//Code for navigation menu
+function openNav() {
+    document.getElementById("mySidenav").style.width = "28%";
+    document.getElementById("main").style.marginLeft = "0";
+    document.body.style.backgroundColor = "#59323C";
+    
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+    document.body.style.backgroundColor = "#59323C";
+}
