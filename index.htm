@@ -3,11 +3,11 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
+    
   <title>Brain Boost</title>
-  <meta name="description" content="HTML5 Template">
+  <meta name="description" content="Html5 Template">
     <style type="text/css">
-
+        
         @import url(style.css);
 
         @media screen and (max-height: 450px) {
@@ -15,13 +15,26 @@
         .sidenav a {font-size: 18px;}
         }
 
+        @-webkit-keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+        }
+
+        @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+        }
+
     </style>
 
     <script src="myjavascript.js"></script>
+   
 
 </head>
 
 <body style="padding-bottom: 150px;">
+    
+    
     <!-- Dropdown Menu 1 
     <div class="dropdown">
         <button class="dropbtn">Shop/Contact Us</button>
@@ -34,6 +47,9 @@
         </div>
     </div>
     -->
+
+
+
     <!--Menu 2-->
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -82,18 +98,82 @@
     <p class="safetyText">Our number one priority is your safety. Our products undergo rigerous quality testing and volunteer trials!</p>
     <a class="satisfactionImage"><img src="images/satisfactionimage.png" width="200" height="145" /></a>
     <p class="satisfactionText">Your satisfaction is 100% guarenteed when you order through Brain Boost. Return anytime, for any reason and shipping is on us!</p>
+    
+
+
+    <div class="slideshowPosition">
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 5</div>
+            <img src="images/logo2.png" style="width:100%">
+            <div class="text">Get natural focus and energy!</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 5</div>
+            <img src="images/energyproduct1.jpg" style="width:100%">
+            <div class="text">Quality assurance!</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 5</div>
+            <img src="images/energyproduct2.jpg" style="width:100%">
+            <div class="text"></div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 5</div>
+            <img src="images/energyproduct3.jpg" style="width:100%">
+            <div class="text">Natural! Organic! Safe!</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 5</div>
+            <img src="images/energyproduct5.jpg" style="width:100%">
+            <div class="text">Shop today, save 10%!</div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+    </div>
+
+    <!--Javascript code for product slideshow-->
+    <script>
+
+                var slideIndex = 1;
+                showSlides(slideIndex);
+
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) { slideIndex = 1 }
+                    if (n < 1) { slideIndex = slides.length }
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " active";
+                }
+    </script>
 
             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
-    <!--Sidebar Links Below, Used on previous version of brainboost website
-            <h3 class="linksHeading">
-                Links
-            </h3>
-            <p>
-                <a class="focusStoreLink" href="http://knowles201.github.io/focussupplementpage.html"><img src="images/focuslink3.jpg" width="250" height="95"/></a>
-                <a class="energyStoreLink" href="http://knowles201.github.io/energysupplementpage.html"><img src="images/energylink.jpg" width="250" height="95" /></a>
-                <a class="contactUsLink" href="http://knowles201.github.io/contactuspage.html"><img src="images/contactuslink.png" width="250" height="95" /></a>
-            </p>
-  -->
+    
 </body>
 </html>

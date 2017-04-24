@@ -2,8 +2,11 @@
 
 
 //Create new variable, assign date function
-var d = new Date();
-document.getElementById("date").innerHTML = d;
+
+window.onload = function () {
+    var d = new Date();
+    document.getElementById("date").innerHTML = d;
+}
 
 //Validation for contact us page
 function validateForm() {
@@ -30,3 +33,5 @@ function closeNav() {
     document.getElementById("main").style.marginLeft = "0";
     document.body.style.backgroundColor = "#59323C";
 }
+
+//Javascript code for product slideshow
