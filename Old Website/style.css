@@ -1,0 +1,348 @@
+﻿body
+{
+    background-color: #59323C;
+    font-family: 'Comic Sans MS';
+}
+.creamColor{color: #F2EEB3}
+.tableColorFormat{background-color: #BFAF80}
+a:link{ color:#F2EEB3}
+a:visited{color:#14bf95}
+a:hover {color:#1446be}
+.logoHeading 
+{
+    position:absolute;
+    top: 55px;
+    left: 25px; 
+}
+.sloganHeading
+{
+    color: #F2EEB3;
+    position:absolute;
+    top: 50px;
+    left: 500px;
+}
+.titleHeading   
+{
+    color: #F2EEB3;
+    position:absolute;
+    top:0px;
+    left: 800px;
+}
+.logoTwoHeading
+{
+    position:absolute;
+    top: 125px;
+    left: 980px;
+}
+.featureList
+{
+    position:absolute;
+    top:215px;
+    left: 480px;
+    color: #F2EEB3;
+}
+.featureHeader
+{
+    position:absolute;
+    top: 170px;
+    left: 500px;
+    color: #F2EEB3;
+    font-size:x-large;
+}
+.orangeDivider
+{
+   background: #F2AE72;    
+}
+.horizontalRule
+{
+    position:absolute;
+    top: 600px;
+}
+.linksHeading
+{
+    position: absolute;
+    top: 300px;
+    left: 25px;
+    color: #F2EEB3;
+    border-bottom: solid 2px;
+}
+.focusStoreLink
+{
+    position:absolute;
+    top: 355px;
+    left: 25px;
+    
+}
+.energyStoreLink
+{
+    position:absolute;
+    top: 458px;
+    left: 25px;
+    
+}
+.contactUsLink
+{
+    position:absolute;
+    top: 560px;
+    left: 25px;
+}
+.satisfactionImage
+{
+    position:absolute;
+    top: 640px;
+    left: 455px;   
+}
+.madeInUSA
+{
+    position:absolute;
+    top: 335px;
+    left: 460px;
+}
+.usaText
+{
+    position:absolute;
+    top:365px;
+    left: 700px;
+    color:#F2EEB3;
+}
+.safetyImage
+{
+    position:absolute;
+    top: 485px;
+    left: 435px;
+}
+.safetyText
+{
+    position:absolute;
+    top: 515px;
+    left: 700px;
+    color:#F2EEB3;
+    padding-right: 5px;
+}
+.satisfactionText
+{
+    position:absolute;
+    top: 670px;
+    left: 700px;
+    color:#F2EEB3;
+}
+.table
+{
+    position:absolute;
+    top: 340px;
+    left: 200px;
+    background-color: #BFAF80;
+}
+.homePage
+{
+    position:absolute;
+    top: 1170px;
+    left: 875px;
+    padding-bottom: 100px;
+}
+.tableCaption
+{
+    color:#F2EEB3;
+    font-size: x-large;
+}
+.dateFooter
+{
+    color:#F2EEB3;
+    position:absolute;
+    top: 1150px;
+    left: 314px;
+}
+
+/* CSS Style Classes below are for the dropdown menu*/
+.dropbtn {
+    background-color: #F2EEB3;
+    color: black;
+    padding: 16px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.dropdown {
+    position: absolute;
+    display: inline-block;
+    top: 320px;
+    left: 8px;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+/*Dropdown Menu possibility 2*/
+body {
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 1.0s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+ #main {
+    transition: margin-left .5s;
+    padding: 16px;
+    position:absolute;
+    top: 300px;
+    left: -8px;
+    color: #F2EEB3
+}
+
+/*Product Slideshow CSS Style Classes Below*/
+
+.slideshowPosition{
+    position:absolute;
+    top: 380px;
+    left:10px;
+}
+
+.slideshow-container {
+  max-width: 300px;
+  max-height:inherit;
+  position: relative;
+  margin: auto;
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 15px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev{
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #F2EEB3;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}

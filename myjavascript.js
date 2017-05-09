@@ -1,37 +1,62 @@
 // JavaScript source code
+// Code to start race
 
+var counter = 0;
+var timerVar;
 
-//Create new variable, assign date function
+function startRace() {
+    document.getElementById("redlight").src = "images/greenlight.png";
 
-window.onload = function () {
-    var d = new Date();
-    document.getElementById("date").innerHTML = d;
+    
+    timerVar = setInterval(moveRacers, 500);
+    
+   
 }
 
-//Validation for contact us page
-function validateForm() {
-    var a = document.forms["myForm"]["fname"].value;
-    var b = document.forms["myForm"]["lname"].value;
-    var c = document.forms["myForm"]["email"].value;
+function moveRacers() {
+    var moveAmountSpongebob = Math.floor((Math.random() * 100) + 1);
+    var moveAmountPatrick = Math.floor((Math.random() * 100) + 1);
 
-    if (a == null || a == "" || b == null || b == "" || c == null || c == "") {
-        alert("Please Complete All Fields");
-        return false;
+    var spongebobImage = document.getElementById("spongebob");
+    var patrickImage = document.getElementById("patrick");
+    var rightSpongebob = parseInt(spongebobImage.style.left) || 0;
+    var rightPatrick = parseInt(patrickImage.style.left) || 0;
+
+
+
+    rightSpongebob += moveAmountSpongebob;
+    spongebobImage.style.left = rightSpongebob + "px";
+
+    rightPatrick += moveAmountPatrick;
+    patrickImage.style.left = rightPatrick + "px";
+
+    checkForWinner(rightSpongebob, rightPatrick)
+    counter += 1;
+
+}
+
+function checkForWinner(spongebobPostion, patrickPosition){
+    var sPosition = spongebobPostion;
+    var pPosition = patrickPosition
+    
+    
+    if(counter == 15)
+    {
+        clearInterval(timerVar);
+        if(sPosition > pPosition){
+            document.getElementById("spongebobwins").style.visibility = "visible";
+            document.getElementById("redlight").style.visibility = "hidden";
+            document.getElementById("titlelabel").innerHTML = "SPONGEBOB WINS!! Tap Spongebob to race again!!" 
+        }
+        else{
+            document.getElementById("patrickwins").style.visibility = "visible";
+            document.getElementById("titlelabel").innerHTML = "PATRICK WINS!! Tap Patrick to race again!!"
+            document.getElementById("redlight").style.visibility = "hidden";
+        }
     }
 }
 
-//Code for navigation menu
-function openNav() {
-    document.getElementById("mySidenav").style.width = "28%";
-    document.getElementById("main").style.marginLeft = "0";
-    document.body.style.backgroundColor = "#59323C";
-    
+function restart() {
+    location.reload();
 }
 
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
-    document.body.style.backgroundColor = "#59323C";
-}
-
-//Javascript code for product slideshow
